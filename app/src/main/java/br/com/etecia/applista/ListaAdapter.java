@@ -1,6 +1,7 @@
 package br.com.etecia.applista;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -18,11 +19,21 @@ public class ListaAdapter extends RecyclerView.Adapter<ListaAdapter.ViewHolder> 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view;
+
+        LayoutInflater myInflater = LayoutInflater.from(myContext);
+
+        view = myInflater.inflate(R.layout.modelo_livros,parent,false);
+
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.txtLivros.setText(lstLivros.get(position).getTitulo());
+        holder.imgLivros.setImageResource(lstLivros.get(position).getMiniatura());
+
+
 
     }
 
@@ -37,6 +48,9 @@ public class ListaAdapter extends RecyclerView.Adapter<ListaAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            txtLivros = itemView.findViewById(R.id.id_lblTituloLivro);
+            imgLivros = itemView.findViewById(R.id.id_imgLivro);
         }
     }
 }
