@@ -28,7 +28,7 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:paddingTop="10dp"
-            android:text="Endrick"
+            android:text="poste"
             android:textSize="18dp"
             android:textStyle="bold" />
 
@@ -53,63 +53,11 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:padding="2dp"
-            android:src="@drawable/pai"
+            android:src="@drawable/poste"
             app:civ_border_color="#DD2A7B"
             app:civ_border_width="2dp" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:paddingStart="50dp"
-            >
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-
-                    android:text="4564"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="center"
-                    android:padding="4dp"
-                    android:text="4564"
-                    android:textSize="10dp" />
-
-
-            </LinearLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:padding="4dp"
-                android:text="4564"
-                android:textSize="18dp" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:padding="4dp"
-                android:text="4564"
-                android:textSize="18dp" />
-
-
-        </RelativeLayout>
 
     </LinearLayout>
 
